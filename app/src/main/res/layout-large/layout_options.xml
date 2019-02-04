@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        app:cardCornerRadius="30dp"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:weightSum="4"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/btnAdd"
+                android:text="Kelime Ekle"
+                android:textColor="#fff"
+                android:textSize="30sp"
+                android:textAllCaps="false"
+                android:background="@drawable/button_main_screen"
+                android:layout_width="match_parent"
+                android:layout_height="70dp" />
+            <Button
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/btnShowWord"
+                android:text="Kelimeleri Listele"
+                android:textColor="#fff"
+                android:textSize="30sp"
+                android:textAllCaps="false"
+                android:background="@drawable/button_main_screen"
+                android:layout_width="match_parent"
+                android:layout_height="70dp" />
+            <Button
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/btnPractice"
+                android:text="Pratik Yap"
+                android:textColor="#fff"
+                android:textSize="30sp"
+                android:textAllCaps="false"
+                android:background="@drawable/button_main_screen"
+                android:layout_width="match_parent"
+                android:layout_height="70dp" />
+            <Button
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/btnSettings"
+                android:text="Ayarlar"
+                android:textColor="#fff"
+                android:textSize="30sp"
+                android:textAllCaps="false"
+                android:background="@drawable/button_main_screen"
+                android:layout_width="match_parent"
+                android:layout_height="70dp" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

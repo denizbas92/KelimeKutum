@@ -1,0 +1,166 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/frame"
+    tools:context="kutum.kelime.kelimekutum.FragmentsAdapter.SettingFragment">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvUserName"
+                    android:layout_weight="1"
+                    android:textSize="25sp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tvPassword"
+                    android:layout_weight="1"
+                    android:textSize="25sp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardTrueFalseTestNumber"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#f7f6f6"
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+                <TextView
+                    android:gravity="center|left"
+                    android:drawableRight="@drawable/ic_arrow_normal"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:text="Doğru-Yanlış Test Sayısı"
+                    android:textSize="30sp"
+                    android:paddingLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardMultipleChoiceTestNumber"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#f7f6f6"
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+                <TextView
+                    android:gravity="center|left"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:drawableRight="@drawable/ic_arrow_normal"
+                    android:text="Çoktan Seçmeli Test Sayısı"
+                    android:textSize="30sp"
+                    android:paddingLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardListenMeaningTestNumber"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#f7f6f6"
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+                <TextView
+                    android:gravity="center|left"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:drawableRight="@drawable/ic_arrow_normal"
+                    android:text="Dinle-Anlamı Seç Test Sayısı"
+                    android:textSize="30sp"
+                    android:paddingLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardListenWordTestNumber"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#f7f6f6"
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+                <TextView
+                    android:gravity="center|left"
+                    android:drawableRight="@drawable/ic_arrow_normal"
+                    android:text="Dinle-Kelimeyi Seç Test Sayısı"
+                    android:textSize="30sp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:paddingLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardListenWriteTestNumber"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#f7f6f6"
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+                <TextView
+                    android:gravity="center|left"
+                    android:drawableRight="@drawable/ic_arrow_normal"
+                    android:text="Dinle-Kelimeyi Yaz Test Sayısı"
+                    android:textSize="30sp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:paddingLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardSeeMeaningWriteWord"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#f7f6f6"
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+                <TextView
+                    android:gravity="center|left"
+                    android:drawableRight="@drawable/ic_arrow_normal"
+                    android:text="Anlamı Gör-Kelimeyi Yaz Test Sayısı"
+                    android:textSize="30sp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:paddingLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardUserName"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#f7f6f6"
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+                <TextView
+                    android:gravity="center|left"
+                    android:drawableRight="@drawable/ic_arrow_normal"
+                    android:text="Kullanıcı Bilgisi Ayarları"
+                    android:textSize="30sp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:paddingLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

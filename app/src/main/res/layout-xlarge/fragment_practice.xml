@@ -1,0 +1,89 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kutum.kelime.kelimekutum.FragmentsAdapter.PracticeFragment">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_margin="60dp"
+                android:weightSum="4"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_weight="1"
+                    android:id="@+id/btnTrueFalse"
+                    android:text="DOĞRU-YANLIŞ"
+                    android:textColor="#fff"
+                    android:textSize="38sp"
+                    android:background="@drawable/button_selector_rectangle"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp" />
+
+                <Button
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:id="@+id/btnMultipleChoice"
+                    android:text="ÇOKTAN SEÇMELİ"
+                    android:textColor="#fff"
+                    android:textSize="38sp"
+                    android:background="@drawable/button_selector_rectangle"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp" />
+
+                <Button
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:id="@+id/btnListenMeaning"
+                    android:text="DİNLE-ANLAMI SEÇ"
+                    android:textColor="#fff"
+                    android:textSize="38sp"
+                    android:background="@drawable/button_selector_rectangle"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp" />
+
+                <Button
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:id="@+id/btnListenWord"
+                    android:text="DİNLE-KELİMEYİ SEÇ"
+                    android:textColor="#fff"
+                    android:textSize="38sp"
+                    android:background="@drawable/button_selector_rectangle"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp" />
+
+                <Button
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:id="@+id/btnListenWrite"
+                    android:text="DİNLE-KELİMEYİ YAZ"
+                    android:textColor="#fff"
+                    android:textSize="38sp"
+                    android:background="@drawable/button_selector_rectangle"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp" />
+
+                <Button
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:id="@+id/btnSeeMeaningWriteWord"
+                    android:text="ANLAMI GÖR-KELİMEYİ YAZ"
+                    android:textColor="#fff"
+                    android:textSize="38sp"
+                    android:background="@drawable/button_selector_rectangle"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+</FrameLayout>

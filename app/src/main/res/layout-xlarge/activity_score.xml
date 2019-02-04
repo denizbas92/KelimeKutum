@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#062eb1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="450dp">
+        <LinearLayout
+            android:id="@+id/first"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.CardView
+                android:id="@+id/topCard"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_margin="20dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/scoreBoard"
+                        android:text="SKOR"
+                        android:drawableLeft="@drawable/ic_star_normal"
+                        android:drawableRight="@drawable/ic_star_normal"
+                        android:textStyle="bold"
+                        android:textSize="50sp"
+                        android:gravity="center"
+                        android:paddingLeft="50dp"
+                        android:paddingRight="50dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <View
+                        android:layout_above="@id/dotsLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="#4701f9"></View>
+
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/tvCorrectNumber"
+                        android:textSize="40sp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tvWrongNumber"
+                        android:textSize="40sp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_weight="2"
+                android:layout_below="@+id/topCard"
+                android:id="@+id/tabLayout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_gravity=""
+                    android:id="@+id/tvTrue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/abhaya_libre"
+                    android:textColor="#fff"
+                    android:text="DOĞRU CEVAPLAR"
+                    android:textSize="42sp" />
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#FF0000FF" />
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:id="@+id/tvFalse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/abhaya_libre"
+                    android:textColor="#ffffff"
+                    android:text="YANLIŞ CEVAPLAR"
+                    android:textSize="35sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mainViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_above="@+id/layoutButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="61dp"
+        android:background="#fff"></android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/layoutButton"
+        android:layout_above="@+id/adView"
+        android:layout_marginBottom="20dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_gravity="bottom"
+            android:id="@+id/btnExit"
+            android:background="@drawable/button_selector_rectangle"
+            android:text="ÇIKIŞ"
+            android:textSize="36sp"
+            android:textColor="#fff"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="90dp" />
+        <Button
+            android:layout_gravity="bottom"
+            android:id="@+id/btnAgain"
+            android:background="@drawable/button_selector_rectangle"
+            android:text="TEKRAR"
+            android:textSize="36sp"
+            android:textColor="#fff"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="90dp" />
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="LEADERBOARD"
+        ads:adUnitId="@string/bannerID"></com.google.android.gms.ads.AdView>
+</RelativeLayout>

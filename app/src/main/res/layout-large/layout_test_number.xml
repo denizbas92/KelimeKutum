@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:text="Dinle-Kelimeyi Seç Test Sayısı"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:textStyle="bold|italic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+                <RadioGroup
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/rb5"
+                        android:text="5"
+                        android:textSize="28sp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <RadioButton
+                        android:id="@+id/rb10"
+                        android:text="10"
+                        android:textSize="28sp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <RadioButton
+                        android:id="@+id/rb15"
+                        android:text="15"
+                        android:textSize="28sp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <RadioButton
+                        android:id="@+id/rb20"
+                        android:text="20"
+                        android:textSize="28sp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RadioGroup>
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btnExit"
+                    android:textColor="#fff"
+                    android:textSize="28sp"
+                    android:background="@drawable/button_selector_rectangle"
+                    android:text="ÇIKIŞ"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp" />
+                <Button
+                    android:id="@+id/btnSave"
+                    android:textColor="#fff"
+                    android:textSize="28sp"
+                    android:background="@drawable/button_selector_rectangle"
+                    android:text="KAYDET"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kutum.kelime.kelimekutum">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".RemoteConfigPackage.WrapperApp"
+        android:allowBackup="true"
+        android:icon="@drawable/box_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".WordList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TrueFalse"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StartPractice"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MultipleChoice"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ListenSelectMeaning"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ListenSelectWord"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ListenWriteWord"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Settings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WelcomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SeeMeaningWriteWord"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ScoreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainScreen"
+            android:label="@string/title_activity_main_screen"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".ShowCloudWords" />
+        <activity android:name=".select_word_practice.SelectWordList"></activity>
+    </application>
+
+</manifest>
