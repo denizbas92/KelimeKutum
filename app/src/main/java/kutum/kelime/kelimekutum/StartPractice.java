@@ -2,12 +2,13 @@ package kutum.kelime.kelimekutum;
 
 import android.content.Intent;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;;
 
 public class StartPractice extends AppCompatActivity {
 

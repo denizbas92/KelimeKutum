@@ -3,8 +3,8 @@ package kutum.kelime.kelimekutum;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.util.Log;
@@ -18,7 +18,6 @@ import com.google.android.gms.ads.MobileAds;
 
 import java.util.List;
 
-import butterknife.BindView;
 import kutum.kelime.kelimekutum.ViewPagerPackage.PagerViewAdapter;
 
 public class ScoreActivity extends AppCompatActivity {

@@ -1,13 +1,12 @@
 package kutum.kelime.kelimekutum;
 
-import android.arch.persistence.room.Room;
+import androidx.room.Room;
 import android.content.Intent;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.CardView;
+import androidx.cardview.widget.CardView;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -27,9 +26,6 @@ import kutum.kelime.kelimekutum.Model.SettingsPost;
 import kutum.kelime.kelimekutum.Model.Word;
 import kutum.kelime.kelimekutum.RoomDatabase.SettingsApp;
 import kutum.kelime.kelimekutum.RoomDatabase.WordApp;
-
-import static kutum.kelime.kelimekutum.R.color.correct_answer;
-import static kutum.kelime.kelimekutum.R.color.wrong_answer;
 
 public class TrueFalse extends AppCompatActivity {
     private AdView adView;

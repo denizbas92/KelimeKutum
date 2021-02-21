@@ -3,18 +3,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="kutum.kelime.kelimekutum.FragmentsAdapter.HomeFragment">
+    tools:context="kutum.kelime.kelimekutum.FragmentsAdapter.HomeFragment"
+    tools:ignore="MissingDefaultResource">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <android.support.v7.widget.RecyclerView
+            <androidx.recyclerview.widget.RecyclerView
                 android:layout_margin="5dp"
                 android:id="@+id/recWords"
                 android:layout_width="match_parent"
                 android:layout_height="250dp">
-            </android.support.v7.widget.RecyclerView>
+            </androidx.recyclerview.widget.RecyclerView>
 
             <View
                 android:id="@+id/view1"

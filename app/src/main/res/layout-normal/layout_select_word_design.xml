@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:ignore="MissingDefaultResource">
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/cardWord"
         app:cardCornerRadius="10dp"
         android:layout_margin="5dp"
@@ -23,5 +23,5 @@
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="117dp"
             tools:layout_editor_absoluteY="30dp" />
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 </RelativeLayout>

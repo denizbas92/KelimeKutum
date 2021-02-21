@@ -1,13 +1,13 @@
 package kutum.kelime.kelimekutum.Adapter;
 
-import android.arch.persistence.room.Room;
+import androidx.appcompat.app.AlertDialog;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.room.Room;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Handler;
 import android.speech.tts.TextToSpeech;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -29,10 +29,7 @@ import java.util.List;
 import kutum.kelime.kelimekutum.Constants.NodeName;
 import kutum.kelime.kelimekutum.Model.Word;
 import kutum.kelime.kelimekutum.R;
-import kutum.kelime.kelimekutum.RoomDatabase.UserApp;
-import kutum.kelime.kelimekutum.RoomDatabase.WordApp;
 import kutum.kelime.kelimekutum.ShowCloudWords;
-import kutum.kelime.kelimekutum.WordList;
 
 /**
  * Created by deniz on 11.3.2018.

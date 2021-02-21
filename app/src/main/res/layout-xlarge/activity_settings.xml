@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/cardTrueFalseTestNumber"
             android:layout_marginTop="10dp"
             app:cardBackgroundColor="#f7f6f6"
@@ -33,9 +33,9 @@
                 android:paddingLeft="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/cardMultipleChoiceTestNumber"
             android:layout_marginTop="10dp"
             app:cardBackgroundColor="#f7f6f6"
@@ -50,9 +50,9 @@
                 android:paddingLeft="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/cardListenMeaningTestNumber"
             android:layout_marginTop="10dp"
             app:cardBackgroundColor="#f7f6f6"
@@ -67,9 +67,9 @@
                 android:paddingLeft="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/cardListenWordTestNumber"
             android:layout_marginTop="10dp"
             app:cardBackgroundColor="#f7f6f6"
@@ -84,9 +84,9 @@
                 android:paddingLeft="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/cardListenWriteTestNumber"
             android:layout_marginTop="10dp"
             app:cardBackgroundColor="#f7f6f6"
@@ -101,9 +101,9 @@
                 android:paddingLeft="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/cardSeeMeaningWriteWord"
             android:layout_marginTop="10dp"
             app:cardBackgroundColor="#f7f6f6"
@@ -118,7 +118,7 @@
                 android:paddingLeft="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
     </LinearLayout>
     <Button
         android:id="@+id/btnBack"

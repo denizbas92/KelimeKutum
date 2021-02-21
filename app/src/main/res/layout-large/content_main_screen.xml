@@ -7,7 +7,8 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="kutum.kelime.kelimekutum.MainScreen"
-    tools:showIn="@layout/activity_main_screen">
+    tools:showIn="@layout/activity_main_screen"
+    tools:ignore="MissingDefaultResource">
 
     <LinearLayout
         android:id="@+id/layout"
@@ -97,12 +98,11 @@
             </LinearLayout>
         </HorizontalScrollView>
 
-        <android.support.v4.view.ViewPager
+        <androidx.viewpager.widget.ViewPager
             android:layout_below="@+id/tab"
             android:id="@+id/mainViewPager"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-        </android.support.v4.view.ViewPager>
+            android:layout_height="match_parent" />
     </LinearLayout>
 
 </RelativeLayout>

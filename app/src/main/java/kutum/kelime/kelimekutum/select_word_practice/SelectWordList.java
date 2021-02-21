@@ -1,42 +1,25 @@
 package kutum.kelime.kelimekutum.select_word_practice;
 
-import android.arch.persistence.room.Room;
-import android.content.Context;
-import android.content.Intent;
-import android.content.SharedPreferences;
-import android.graphics.Color;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.EditText;
-import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.room.Room;
 
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.MobileAds;
-import com.miguelcatalan.materialsearchview.MaterialSearchView;
-import com.muddzdev.styleabletoastlibrary.StyleableToast;
+import android.content.Intent;
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.appcompat.widget.Toolbar;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 import kutum.kelime.kelimekutum.MainActivity;
 import kutum.kelime.kelimekutum.Model.Word;
 import kutum.kelime.kelimekutum.R;
 import kutum.kelime.kelimekutum.RoomDatabase.WordApp;
-import kutum.kelime.kelimekutum.WordList;
 
 public class SelectWordList extends AppCompatActivity implements OnGetCounter {
 

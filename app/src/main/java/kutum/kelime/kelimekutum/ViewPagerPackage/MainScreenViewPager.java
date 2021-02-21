@@ -1,15 +1,14 @@
 package kutum.kelime.kelimekutum.ViewPagerPackage;
 
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
 
-import kutum.kelime.kelimekutum.FalseAnswerFragment;
+
 import kutum.kelime.kelimekutum.FragmentsAdapter.HomeFragment;
 import kutum.kelime.kelimekutum.FragmentsAdapter.PracticeFragment;
 import kutum.kelime.kelimekutum.FragmentsAdapter.SettingFragment;
 import kutum.kelime.kelimekutum.FragmentsAdapter.WordListFragment;
-import kutum.kelime.kelimekutum.TrueAnswerFragment;
 
 /**
  * Created by deniz on 7.3.2018.

@@ -1,25 +1,23 @@
 package kutum.kelime.kelimekutum;
 
 
-import android.arch.persistence.room.Room;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.room.Room;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.fragment.app.Fragment;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-import butterknife.BindView;
 import butterknife.ButterKnife;
 import kutum.kelime.kelimekutum.Adapter.FalseAnswerAdapter;
-import kutum.kelime.kelimekutum.Adapter.TrueAnswersAdapter;
 import kutum.kelime.kelimekutum.Model.TrueFalseAnswerPost;
 import kutum.kelime.kelimekutum.Model.Word;
 import kutum.kelime.kelimekutum.RoomDatabase.WordApp;
@@ -50,7 +48,7 @@ public class FalseAnswerFragment extends Fragment {
         View view=inflater.inflate(R.layout.fragment_false_answer, container, false);
         ButterKnife.bind(this, view);
         recFalseAnswers=view.findViewById(R.id.recFalseAnswers);
-        recFalseAnswers.setLayoutManager(new LinearLayoutManager(container.getContext(),LinearLayoutManager.VERTICAL,false));
+        recFalseAnswers.setLayoutManager(new LinearLayoutManager(container.getContext(), LinearLayoutManager.VERTICAL,false));
 
         trueFalseAnswerPost=new TrueFalseAnswerPost();
         scoreActivity=new ScoreActivity();

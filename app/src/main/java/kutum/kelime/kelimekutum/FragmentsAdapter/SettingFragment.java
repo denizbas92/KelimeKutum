@@ -1,25 +1,21 @@
 package kutum.kelime.kelimekutum.FragmentsAdapter;
 
 
-import android.arch.persistence.room.Room;
-import android.content.Intent;
-import android.graphics.Bitmap;
+import androidx.room.Room;
+
 import android.graphics.Color;
 import android.os.Bundle;
-import android.os.Environment;
 import android.os.Handler;
-import android.support.v4.app.Fragment;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.widget.CardView;
+import androidx.fragment.app.Fragment;
+import androidx.appcompat.app.AlertDialog;
+import androidx.cardview.widget.CardView;
 import android.text.InputFilter;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.FrameLayout;
 import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -31,18 +27,10 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.muddzdev.styleabletoastlibrary.StyleableToast;
 
-import org.w3c.dom.Node;
-
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.util.Date;
 import java.util.List;
 
 import kutum.kelime.kelimekutum.Constants.NodeName;
 import kutum.kelime.kelimekutum.InternetService.ConnectionDetector;
-import kutum.kelime.kelimekutum.MainActivity;
 import kutum.kelime.kelimekutum.Model.SeeMeaningPost;
 import kutum.kelime.kelimekutum.Model.SettingsPost;
 import kutum.kelime.kelimekutum.Model.User;
@@ -50,7 +38,6 @@ import kutum.kelime.kelimekutum.R;
 import kutum.kelime.kelimekutum.RoomDatabase.SettingSeeMeaningApp;
 import kutum.kelime.kelimekutum.RoomDatabase.SettingsApp;
 import kutum.kelime.kelimekutum.RoomDatabase.UserApp;
-import kutum.kelime.kelimekutum.Settings;
 
 /**
  * A simple {@link Fragment} subclass.

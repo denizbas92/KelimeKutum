@@ -2,26 +2,23 @@ package kutum.kelime.kelimekutum.FragmentsAdapter;
 
 
 import android.app.ProgressDialog;
-import android.arch.persistence.room.Room;
-import android.content.DialogInterface;
+
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.room.Room;
+
 import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Color;
-import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.speech.tts.TextToSpeech;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.fragment.app.Fragment;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.recyclerview.widget.RecyclerView;
 import android.text.InputFilter;
 import android.text.TextUtils;
 import android.util.DisplayMetrics;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -40,7 +37,6 @@ import com.muddzdev.styleabletoastlibrary.StyleableToast;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.w3c.dom.Node;
 
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -53,13 +49,11 @@ import java.util.Scanner;
 import kutum.kelime.kelimekutum.Adapter.WordAdapter;
 import kutum.kelime.kelimekutum.Constants.NodeName;
 import kutum.kelime.kelimekutum.InternetService.ConnectionDetector;
-import kutum.kelime.kelimekutum.ListenWriteWord;
 import kutum.kelime.kelimekutum.MainScreen;
 import kutum.kelime.kelimekutum.Model.SeeMeaningPost;
 import kutum.kelime.kelimekutum.Model.User;
 import kutum.kelime.kelimekutum.Model.Word;
 import kutum.kelime.kelimekutum.R;
-import kutum.kelime.kelimekutum.RemoteConfigPackage.UpdateHelper;
 import kutum.kelime.kelimekutum.RoomDatabase.SettingSeeMeaningApp;
 import kutum.kelime.kelimekutum.RoomDatabase.UserApp;
 import kutum.kelime.kelimekutum.RoomDatabase.WordApp;

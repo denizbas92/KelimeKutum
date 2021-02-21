@@ -1,29 +1,22 @@
 package kutum.kelime.kelimekutum.FragmentsAdapter;
 
 
-import android.app.AlertDialog;
-import android.arch.persistence.room.Room;
+import androidx.room.Room;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.fragment.app.Fragment;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
 
 import java.util.List;
 
-import kutum.kelime.kelimekutum.MainActivity;
 import kutum.kelime.kelimekutum.Model.Word;
 import kutum.kelime.kelimekutum.R;
-import kutum.kelime.kelimekutum.RoomDatabase.WordApp;
 import kutum.kelime.kelimekutum.StartPractice;
 import kutum.kelime.kelimekutum.select_word_practice.SelectWordList;
-import kutum.kelime.kelimekutum.select_word_practice.SelectWordPracticeAdapter;
 
 /**
  * A simple {@link Fragment} subclass.
