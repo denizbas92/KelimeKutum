@@ -1,10 +1,8 @@
 package kutum.kelime.kelimekutum.RoomDatabase;
 
-import android.arch.persistence.db.SupportSQLiteDatabase;
-import android.arch.persistence.room.Database;
-import android.arch.persistence.room.RoomDatabase;
-import android.arch.persistence.room.migration.Migration;
-import android.support.annotation.VisibleForTesting;
+
+import androidx.room.Database;
+import androidx.room.RoomDatabase;
 
 import kutum.kelime.kelimekutum.InterfacePackage.SettingsDao;
 import kutum.kelime.kelimekutum.Model.SettingsPost;

@@ -41,18 +41,18 @@
                     android:fontFamily="@font/amethysta"
                     android:padding="10dp"
                     android:textSize="35sp" />
-                <com.google.android.gms.ads.AdView
-                    xmlns:ads="http://schemas.android.com/apk/res-auto"
+
+                <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
                     android:id="@+id/adView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"
                     ads:adSize="BANNER"
-                    ads:adUnitId="@string/bannerID"></com.google.android.gms.ads.AdView>
+                    ads:adUnitId="@string/bannerID" />
             </RelativeLayout>
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/cardWord"
                 app:cardCornerRadius="20dp"
                 android:layout_marginTop="20dp"
@@ -99,7 +99,7 @@
                         android:paddingLeft="30dp"
                         android:textStyle="bold" />
                 </RelativeLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
             <Button
                 android:textAllCaps="false"

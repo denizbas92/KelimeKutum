@@ -2,15 +2,13 @@ package kutum.kelime.kelimekutum.select_word_practice;
 
 import android.content.Context;
 import android.graphics.Color;
-import android.support.v7.widget.CardView;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import androidx.cardview.widget.CardView;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.muddzdev.styleabletoastlibrary.StyleableToast;
 
@@ -19,7 +17,6 @@ import java.util.List;
 
 import kutum.kelime.kelimekutum.Model.Word;
 import kutum.kelime.kelimekutum.R;
-import kutum.kelime.kelimekutum.WordList;
 
 public class SelectWordPracticeAdapter extends RecyclerView.Adapter<SelectWordPracticeAdapter.MyViewHolder> {
 

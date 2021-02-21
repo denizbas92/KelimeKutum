@@ -43,7 +43,7 @@
                     android:textSize="65sp" />
             </RelativeLayout>
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/cardWord"
                 app:cardCornerRadius="20dp"
                 android:layout_marginTop="20dp"
@@ -90,7 +90,7 @@
                         android:paddingLeft="30dp"
                         android:textStyle="bold" />
                 </RelativeLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
             <android.support.design.widget.TextInputLayout
                 android:layout_marginTop="20dp"

@@ -1,19 +1,18 @@
 package kutum.kelime.kelimekutum.Adapter;
 
 import android.content.Context;
-import android.content.Intent;
 import android.speech.tts.TextToSpeech;
-import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import androidx.recyclerview.widget.RecyclerView;
+
 import java.util.List;
 
 import kutum.kelime.kelimekutum.MainActivity;
-import kutum.kelime.kelimekutum.MainScreen;
 import kutum.kelime.kelimekutum.Model.Word;
 import kutum.kelime.kelimekutum.R;
 

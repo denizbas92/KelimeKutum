@@ -1,20 +1,19 @@
 package kutum.kelime.kelimekutum;
 
-import android.arch.persistence.room.Room;
 import android.content.Intent;
 import android.os.Handler;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.CardView;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
+import androidx.room.Room;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;

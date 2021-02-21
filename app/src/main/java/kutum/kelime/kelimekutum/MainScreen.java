@@ -1,27 +1,16 @@
 package kutum.kelime.kelimekutum;
 
 import android.animation.Animator;
-import android.app.Fragment;
-import android.arch.persistence.room.Room;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.res.Resources;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.speech.tts.TextToSpeech;
-import android.support.annotation.RequiresApi;
+
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.util.DisplayMetrics;
 import android.util.Log;
@@ -31,36 +20,29 @@ import android.view.ViewAnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.HorizontalScrollView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.room.Room;
+import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
 import com.muddzdev.styleabletoastlibrary.StyleableToast;
 
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.io.InputStream;
-import java.util.BitSet;
-import java.util.Collections;
-import java.util.Comparator;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
-import java.util.Locale;
-import java.util.Scanner;
 
-import kutum.kelime.kelimekutum.Adapter.WordAdapter;
-import kutum.kelime.kelimekutum.FragmentsAdapter.HomeFragment;
-import kutum.kelime.kelimekutum.Model.SeeMeaningPost;
 import kutum.kelime.kelimekutum.Model.Word;
 import kutum.kelime.kelimekutum.RemoteConfigPackage.UpdateHelper;
-import kutum.kelime.kelimekutum.RoomDatabase.SettingSeeMeaningApp;
 import kutum.kelime.kelimekutum.RoomDatabase.WordApp;
 import kutum.kelime.kelimekutum.ViewPagerPackage.MainScreenViewPager;
-import kutum.kelime.kelimekutum.ViewPagerPackage.PagerViewAdapter;
 
 public class MainScreen extends AppCompatActivity implements UpdateHelper.OnUpdateCheckListener  {
     CoordinatorLayout relativeLayout;
@@ -182,6 +164,23 @@ public class MainScreen extends AppCompatActivity implements UpdateHelper.OnUpda
                 mainViewPager.setCurrentItem(3);
             }
         });
+
+
+
+        boolean isDownloadFromPlayStore = verifyInstallerId(this);
+        if (isDownloadFromPlayStore){
+            String message = "Uygulama google play üzerinden indirildi";
+            AlertDialog alertDialog=new AlertDialog.Builder(MainScreen.this)
+                    .setTitle("İndirme Durumu")
+                    .setMessage(message).create();
+            alertDialog.show();
+        } else {
+            String message = "Uygulama google play üzerinden indirilmedi";
+            AlertDialog alertDialog=new AlertDialog.Builder(MainScreen.this)
+                    .setTitle("İndirme Durumu")
+                    .setMessage(message).create();
+            alertDialog.show();
+        }
     }
 
     private void init() {
@@ -404,6 +403,17 @@ public class MainScreen extends AppCompatActivity implements UpdateHelper.OnUpda
                     }
                 }).create();
         alertDialog.show();
+    }
+
+    boolean verifyInstallerId(Context context) {
+        // A list with valid installers package name
+        List<String> validInstallers = new ArrayList<>(Arrays.asList("com.android.vending", "com.google.android.feedback"));
+
+        // The package name of the app that has installed your app
+        final String installer = context.getPackageManager().getInstallerPackageName(context.getPackageName());
+
+        // true if your app has been downloaded from Play Store
+        return installer != null && validInstallers.contains(installer);
     }
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)

@@ -1,8 +1,8 @@
 package kutum.kelime.kelimekutum.Model;
 
-import android.arch.persistence.room.ColumnInfo;
-import android.arch.persistence.room.Entity;
-import android.arch.persistence.room.PrimaryKey;
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
 
 /**
  * Created by deniz on 4.3.2018.
@@ -13,10 +13,10 @@ public class SeeMeaningPost {
 
 
 
-    @PrimaryKey (autoGenerate = true)
+    @PrimaryKey(autoGenerate = true)
     public int id;
 
-    @ColumnInfo (name = "seeMeaningTestQuantity")
+    @ColumnInfo(name = "seeMeaningTestQuantity")
     private String seeMeaningTestQuantity;
 
     public SeeMeaningPost() {

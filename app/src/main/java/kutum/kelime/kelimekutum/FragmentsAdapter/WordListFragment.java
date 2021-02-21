@@ -1,14 +1,9 @@
 package kutum.kelime.kelimekutum.FragmentsAdapter;
 
 
-import android.arch.persistence.room.Room;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
-import android.support.v4.app.Fragment;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -24,9 +19,12 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.MobileAds;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.Fragment;
+import androidx.room.Room;
+
 import com.miguelcatalan.materialsearchview.MaterialSearchView;
 import com.muddzdev.styleabletoastlibrary.StyleableToast;
 
@@ -39,7 +37,6 @@ import java.util.Locale;
 import kutum.kelime.kelimekutum.Model.Word;
 import kutum.kelime.kelimekutum.R;
 import kutum.kelime.kelimekutum.RoomDatabase.WordApp;
-import kutum.kelime.kelimekutum.WordList;
 
 /**
  * A simple {@link Fragment} subclass.
